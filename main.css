@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+iframe {
+    border: none;overflow-y: hidden;
+}
+
+body {
+    background-image: url('../ahmetbeyza/images/background.JPG');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+}
+
+.cover{
+    margin: 0 auto;
+}
+
+.decorator-1 img {
+    max-width:50%;
+    height:auto;
+    margin: auto;
+    display: block;
+}
+
+.decorator-2 img{
+    max-width:50%;
+    height:auto;
+    margin: auto;
+    display: block;
+    transform: rotate(180deg);
+}
+
+.bg-body{
+    margin: 0;
+    padding: 0;
+}
+
+.header-name, .wed{
+    margin: 0;
+    padding: 0;
+
+    
+    font-family: 'Alice', serif;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Tangerine', cursive;
+}
+
+.wed{
+    font-size: 15vh;
+}
+
+.header-name{
+    font-size: 8vh;
+}
+
+.ampersant{
+    margin: 0;
+    padding: 0;
+    opacity: 0.5;
+    font-family: 'Alice', serif;
+}
+
+.msg{
+    font-size: 2.5vh;
+    font-family: 'Alice', serif;
+}
+
+.invite{
+    font-family: 'Alice', serif;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Tangerine', cursive;
+
+    font-size: 7vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.position-absolute{
+    width: 91%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+
+/* Chat GPT den aldım. Fade-in effect*/
+
+.fade-in {
+
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
