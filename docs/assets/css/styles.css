@@ -25,14 +25,14 @@ body {
 }
 
 .decorator-1 img {
-    max-width:70%;
+    max-width:65%;
     height:auto;
     margin: auto;
     display: block;
 }
 
 .decorator-2 img{
-    max-width:70%;
+    max-width:65%;
     height:auto;
     margin: auto;
     display: block;
@@ -57,7 +57,7 @@ body {
 }
 
 .wed{
-    font-size: 10vh;
+    font-size: 7vh;
 }
 
 .header-name{
@@ -118,6 +118,20 @@ a{
         opacity: 1;
     }
 }
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+.typing-text.fade-out {
+  animation: fadeOut 2s ease-in-out forwards;
+}
+
 
 /* x8qAp30*/
 

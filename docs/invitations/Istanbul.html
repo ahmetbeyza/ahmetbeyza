@@ -24,31 +24,31 @@
 
     <div class="container d-flex flex-column">
         <div class="container" style="height: 100vh;">
-            <div class="row header p-0" style="margin-top: 25vh;">
-                <div id="closeDiv" class="container center h-auto ">
+            <div id="closeRow" class="row header p-0 mt-lg-auto" style="margin-top: 25vh;">
+                <div id="closeDiv" class="container center">
                     <div class="decorator-1 mb-3">
                         <img src="../assets/images/decorator.png" alt="deco-1">
                     </div>
                     <div class="col-12">
-                        <p class="sizeOzel text-center header-name">Size özel davetiyemiz için lütfen isim soyisim
+                        <p class="sizeOzel text-center">Size özel davetiyeniz için lütfen isim soyisim
                             giriniz: </p>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-12 d-flex justify-content-center">
                         <input id="guestName"
-                            class="guestInput form-control border-black bg-transparent mb-3 text-center header-name display-4">
+                            class="guestInput form-control border-black bg-transparent mb-3 text-center w-75">
                     </div>
 
-                    <form class="mb-3 kiminle">
+                    <form class="mb-3 kiminle form-check d-flex align-items-center justify-content-center gap-3">
                         <input type="radio" id="alone" name="name" value="alone">
                         <label for="alone">Yalnız katılacağım.</label><br>
                         <input type="radio" id="fam" name="name" value="fam">
                         <label for="fam">Ailemle katılacağım.</label><br>
                     </form>
 
-                    <div class="d-flex justify-content-center ">
+                    <div class="d-flex justify-content-center">
                         <button onclick="makeInvitation()" id="myButton"
-                            class="link-info   btn btn-dark bg-white  text-black "><b>DAVETİYEM</b></button>
+                            class="link-info btn btn-dark bg-white text-black"><b>DAVETİYEM</b></button>
                     </div>
 
                     <div class="decorator-2 mt-3">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
 
-                <div id="invDiv" class="text-center container center" style="margin-top: 100px; display: none;">
+                <div id="invDiv" class="text-center container mt-0" style="display: none;">
                     <h2 id="who"></h2>
 
                     <h5 id="with"></h5>
@@ -88,10 +88,9 @@
 
                     </div>
 
-
-
                     <div class="border-black border d-flex flex-column  justify-content-around m-3">
                         <h4 class="basliklar">DÜĞÜN</h4>
+
                         <div class="tarih d-flex flex-row align-items-center justify-content-center ">
                             <h6>CTS</h6>
                             <div class="vl"></div>
@@ -113,11 +112,9 @@
                         </p>
                     </div>
 
-                    <a href="./docs/assets/images/canva.png" download="AhmetBeyza">
+                    <a href="../assets/images/canva.png" download="AhmetBeyza">
                         <button>Davetiyeyi indir.</button>
                     </a>
-
-
                 </div>
 
 

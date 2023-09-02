@@ -29,7 +29,6 @@ function makeInvitation() {
 
 
 
-
     document.getElementById("who").innerText = "Sevgili \n" + guestName;
 
 
@@ -39,3 +38,6 @@ function makeInvitation() {
 
 }
 
+document.getElementById("myButton").addEventListener("click",
+    makeInvitation
+);
