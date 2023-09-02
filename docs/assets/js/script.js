@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const text = "Evleniyoruz";
+    const text = "EVLENİYORUZ";
     const typingText = document.getElementById('typing-text');
 
     function typeText() {
@@ -18,3 +18,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     typeText();
 });
+
+function makeInvitation() {
+    const guestName = document.getElementById("guestName").value.toUpperCase();
+    
+    document.getElementById("closeDiv").style.display = "none";
+    document.getElementById("invDiv").style.display = "initial";
+
+
+
+
+    document.getElementById("who").innerText = "Sevgili \n" +guestName;
+
+    
+    if (document.getElementById("fam").checked) {
+        document.getElementById("with").innerText = "ve ailesi";
+    }
+
+
+    
+
+}
+
+document.getElementById("davetiyeAciklama").innerHTML = "Size özel davetiyemiz için lütfen isim soyisim giriniz: ";

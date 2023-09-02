@@ -52,10 +52,12 @@ body {
     font-family: 'Alice', serif;
     font-family: 'Sacramento', cursive;
     font-family: 'Tangerine', cursive;
+    font-family: 'Marcellus', serif;
+
 }
 
 .wed{
-    font-size: 15vh;
+    font-size: 10vh;
 }
 
 .header-name{
@@ -66,7 +68,8 @@ body {
     margin: 0;
     padding: 0;
     opacity: 0.5;
-    font-family: 'Alice', serif;
+    font-family: 'Marcellus', serif;
+
 }
 
 .msg{
@@ -115,3 +118,81 @@ a{
         opacity: 1;
     }
 }
+
+/* x8qAp30*/
+
+#myButton:hover {
+    background-color: black;
+}
+
+#myButton {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #who {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+  }
+
+  #with {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+
+    
+  }
+
+  .isimler {
+    font-family: 'Dancing Script', cursive;
+    font-size: 8vh;
+
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .mutluluk {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .sizeOzel {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .guestInput {
+    font-family: 'Questrial', sans-serif;
+    text-transform: uppercase;
+
+  }
+
+  .adres {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .basliklar {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 5px;
+  }
+
+  .nikah {
+    font-family: 'Roboto Slab';
+    margin-top: 10px;
+  }
+
+  .tarih {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Slabo 27px', serif;
+  }
+
+  .kiminle {
+    font-family: 'Quicksand', sans-serif;
+  }
+
