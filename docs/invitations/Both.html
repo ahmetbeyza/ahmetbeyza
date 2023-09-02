@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Düğünümüze Davetlisiniz</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Sacramento&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Nunito:ital,wght@1,300&family=Questrial&family=Quicksand:wght@400;600&family=Roboto+Slab:wght@600&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+
+    <script src="../assets/js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column">
+        <div class="container" style="height: 100vh;">
+            <div class="row header p-0" style="margin-top: 25vh;">
+                <div id="closeDiv" class="container center">
+                    <div class="decorator-1 mb-3">
+                        <img src="../assets/images/decorator.png" alt="deco-1">
+                    </div>
+                    <div class="col-12">
+                        <p class="sizeOzel text-center header-name">Size özel davetiyemiz için lütfen isim soyisim
+                            giriniz: </p>
+                    </div>
+
+                    <div class="col-12">
+                        <input id="guestName"
+                            class="guestInput form-control border-black bg-transparent mb-3 text-center header-name display-4">
+                    </div>
+
+                    <form class="mb-3 kiminle">
+                        <input type="radio" id="alone" name="name" value="alone">
+                        <label for="alone">Yalnız katılacağım.</label><br>
+                        <input type="radio" id="fam" name="name" value="fam">
+                        <label for="fam">Ailemle katılacağım.</label><br>
+                    </form>
+
+                    <div class="d-flex justify-content-center ">
+                        <button onclick="makeInvitation()" id="myButton"
+                            class="link-info   btn btn-dark bg-white  text-black "><b>DAVETİYEM</b></button>
+                    </div>
+
+                    <div class="decorator-2 mt-3">
+                        <img src="../assets/images/decorator.png" alt="deco-2">
+                    </div>
+                </div>
+
+                <div id="invDiv" class="text-center container center" style="margin-top: 100px; display: none;">
+                    <h2 id="who"></h2>
+
+                    <h5 id="with"></h5>
+
+                    <p class="mutluluk">Sizleri bu güzel günümüzde yanımızda görmekten mutluluk duyacağız.</p>
+
+                    <div class=" border-black  border flex-column  justify-content-around m-3">
+
+                        <h4 class="basliklar">KINA</h4>
+
+                        <div class="tarih d-flex flex-row align-items-center justify-content-center ">
+                            <h6>CTS</h6>
+                            <div class="vl"></div>
+
+                            <div class="d-flex flex-column ">
+                                <h6>Ekim <br>
+                                    21<br>
+                                    2023</h6>
+                            </div>
+                            <div class="vl"></div>
+
+                            <h6>19.00</h6>
+                        </div>
+
+                        <p class="adres">Yeni Emek Mah. Aliya İzzet Begoviç Cad. No: 140 <br>
+                            <b>MODA DÜĞÜN SAL0NU</b><br>
+                            07060 Kepez/ANTALYA
+                        </p>
+
+                    </div>
+
+                    <div class="border-black border d-flex flex-column  justify-content-around m-3">
+                        <h4 class="basliklar">DÜĞÜN</h4>
+
+                        <div class="tarih d-flex flex-row align-items-center justify-content-center ">
+                            <h6>PAZAR</h6>
+                            <div class="vl"></div>
+
+                            <div class="d-flex flex-column ">
+                                <h6>Ekim<br>
+                                    22<br>
+                                    2023</h6>
+                            </div>
+                            <div class="vl"></div>
+
+                            <h6>16.00</h6>
+                        </div>
+
+
+                        <p class="adres">Düzlerçamı Mah. Termessos Bulv. No: 122<br>
+                            <b>AVLUPARK KIR BAHÇESİ </b><br>
+                            07395 Düzlerçamı/ANTALYA
+                        </p>
+
+
+                    </div>
+
+                    <div class="border-black border  flex-column  justify-content-around m-3">
+                        <h4 class="basliklar">DÜĞÜN</h4>
+                        <div class="tarih d-flex flex-row align-items-center justify-content-center ">
+                            <h6>CTS</h6>
+                            <div class="vl"></div>
+
+                            <div class="d-flex flex-column ">
+                                <h6>Ekim<br>
+                                    28<br>
+                                    2023</h6>
+                            </div>
+                            <div class="vl"></div>
+
+                            <h6>19.00</h6>
+                        </div>
+
+                        <h6 class="nikah">Nikah: 19.30</h6>
+                        <p class="adres">Merkez Mah. Kelle İbrahim Cad. No: 17/A <br>
+                            <b>BEYKOZ KORU SOSYAL TESİSİ </b><br>
+                            34820 Beykoz/İSTANBUL
+                        </p>
+                    </div>
+
+                    <a href="./docs/assets/images/canva.png" download="AhmetBeyza">
+                        <button>Davetiyeyi indir.</button>
+                    </a>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

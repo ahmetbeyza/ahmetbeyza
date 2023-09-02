@@ -25,14 +25,14 @@ body {
 }
 
 .decorator-1 img {
-    max-width:50%;
+    max-width:70%;
     height:auto;
     margin: auto;
     display: block;
 }
 
 .decorator-2 img{
-    max-width:50%;
+    max-width:70%;
     height:auto;
     margin: auto;
     display: block;
@@ -82,7 +82,7 @@ body {
     font-family: 'Sacramento', cursive;
     font-family: 'Tangerine', cursive;
 
-    font-size: 7vh;
+    font-size: 9vh;
 }
 
 a{
@@ -195,4 +195,3 @@ a{
   .kiminle {
     font-family: 'Quicksand', sans-serif;
   }
-

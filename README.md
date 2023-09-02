@@ -1,3 +1,3 @@
 Evleniyoruz
 
-[Katılım Formu](www.matebiyatci.com)
+[Tıklayınız](www.ahmetbeyza.com)
