@@ -9,7 +9,7 @@ iframe {
 }
 
 body {
-    background-image: url('../images/background.JPG');
+    background-image: url('../images/back.png');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,6 +18,7 @@ body {
     height: auto;
 
     box-sizing: border-box;
+
 }
 
 /* html,
@@ -52,11 +53,10 @@ body{
     padding: 0;
 }
 
-.header-name, .wed{
+.wed{
     margin: 0;
     padding: 0;
-
-    
+    font-size: 7vh;
     font-family: 'Alice', serif;
     font-family: 'Sacramento', cursive;
     font-family: 'Tangerine', cursive;
@@ -64,20 +64,8 @@ body{
 
 }
 
-.wed{
-    font-size: 7vh;
-}
-
-.header-name{
-    font-size: 8vh;
-}
-
-.ampersant{
-    margin: 0;
-    padding: 0;
-    opacity: 0.5;
-    font-family: 'Marcellus', serif;
-
+.ampersant {
+  font-family: 'Dancing Script', cursive;
 }
 
 .msg{
@@ -142,10 +130,6 @@ a{
 
 
 /* x8qAp30*/
-
-#myButton:hover {
-    background-color: black;
-}
 
 #myButton {
     font-family: 'Quicksand', sans-serif;
@@ -231,11 +215,11 @@ a{
 
  .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 90%;
+  position: fixed;
+  bottom: 0%;
   width: auto;
   padding: 16px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -253,27 +237,29 @@ a{
   left: 0;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.dots {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #050101;
+  background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
-}
-
-.foot {
-  margin-bottom: 0;
+  background-color: #000000;
 }
