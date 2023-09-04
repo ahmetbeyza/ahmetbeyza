@@ -162,6 +162,8 @@ a{
 
   }
 
+
+
   .mutluluk {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
@@ -169,7 +171,7 @@ a{
 
   .sizeOzel {
     font-family: 'Questrial', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .guestInput {
@@ -245,7 +247,8 @@ a{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
 }
 
 .dot {
@@ -253,7 +256,7 @@ a{
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #ffffff;
+  background-color: #a7a5a5;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -277,3 +280,12 @@ a{
   font-family: 'Tangerine', cursive;
   font-family: 'Marcellus', serif;
 }
+
+.mybtn {
+  font-family: 'Questrial', sans-serif;
+text-align: center;
+}
+
+/* .parts {
+  background-color:#E7ECE5;
+} */

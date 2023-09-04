@@ -70,6 +70,7 @@ function typeText() {
 
 typeText();
 
+
 backButton.addEventListener('click', function() {
     typingText.textContent = '';
     
@@ -100,6 +101,34 @@ document.getElementById("sec").innerHTML = seconds
 
 if (timeleft < 0) {
     clearInterval(myfunc);
+    document.getElementById("day").innerHTML = "Are"
+    document.getElementById("hour").innerHTML = "You" 
+    document.getElementById("min").innerHTML = "Ready"
+    document.getElementById("sec").innerHTML = "To Wed?"
+  }
+}, 1000);
+
+var countDownDate2 = new Date("Oct 22, 2023 16:00:00").getTime();
+
+var date2 = new Date();
+
+var myfunc2 = setInterval(function() {
+
+var now2 = new Date().getTime();
+var timeleft2 = countDownDate2 - now2;
+
+var days2 = Math.floor(timeleft2 / (1000 * 60 * 60 * 24));
+var hours2 = Math.floor((timeleft2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes2 = Math.floor((timeleft2 % (1000 * 60 * 60)) / (1000 * 60));
+var seconds2 = Math.floor((timeleft2 % (1000 * 60)) / 1000);
+
+document.getElementById("day2").innerHTML = days2
+document.getElementById("hour2").innerHTML = hours2 
+document.getElementById("min2").innerHTML = minutes2
+document.getElementById("sec2").innerHTML = seconds2
+
+if (timeleft2 < 0) {
+    clearInterval(myfunc2);
     document.getElementById("day").innerHTML = "Are"
     document.getElementById("hour").innerHTML = "You" 
     document.getElementById("min").innerHTML = "Ready"
