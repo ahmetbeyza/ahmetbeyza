@@ -48,23 +48,23 @@
                     <div class="col-12 d-flex flex-row flex-wrap w-100 justify-content-around text-center align-items-center "
                         id="counter">
 
-                        <h3 class="col-12 mb-4 counter-header">Düğünümüze Son</h3>
+                        <h3 class="col-12 mb-4 counter-header">DÜĞÜNÜMÜZE SON</h3>
 
                         <div class="parts flex-grow-1 m-0 p-0 w-25">
+                            <p id="day2" style="height: 30px;"></p>
                             <h3>Gün</h3>
-                            <p id="day2"></p>
                         </div>
                         <div class="parts flex-grow-1 m-0 p-0 w-25">
+                            <p id="hour2" style="height: 30px;"></p>
                             <h3>Saat</h3>
-                            <p id="hour2"></p>
                         </div>
                         <div class="parts flex-grow-1 m-0 p-0 w-25">
+                            <p id="min2" style="height: 30px;"></p>
                             <h4>Dakika</h4>
-                            <p id="min2"></p>
                         </div>
                         <div class="parts flex-grow-1 m-0 p-0 w-25 ">
+                            <p id="sec2" style="height: 30px;"></p>
                             <h4>Saniye</h4>
-                            <p id="sec2"></p>
                         </div>
                     </div>
                 </div>
@@ -99,12 +99,14 @@
                             <form class="mb-3 kiminle form-check">
                                 <input type="radio" id="alone" name="name" value="alone">
                                 <label for="alone">Yalnız katılacağım.</label><br>
-                                <input type="radio" id="fam" name="name" value="fam">
+                                <input type="radio" id="fam" name="name" value="fam" checked>
                                 <label for="fam">Ailemle katılacağım.</label><br>
                             </form>
                         </div>
                         
                     </div>
+
+                    <div class="container text-center" id="uyari" style="display: none;">Lütfen isminizi giriniz.</div>
 
                     <div class="d-flex justify-content-center">
                         <button onclick="makeInvitation()" id="myButton"
@@ -134,56 +136,59 @@
 
                     <div class="flex-column justify-content-around flex-grow-1 ">
 
-                        <h4 class="basliklar">KINA</h4>
+                        <h4 class="basliklar mb-4">KINA</h4>
 
-                        <div class="tarih d-flex flex-row align-items-center justify-content-center ">
-                            <h6>CTS</h6>
+                        <div class="tarih d-flex flex-row align-items-center justify-content-center">
+                            <h6 class="tarih">CTS</h6>
                             <div class="vl"></div>
 
                             <div class="d-flex flex-column ">
-                                <h6>Ekim<br>
+                                <h6 class="tarih">Ekim<br>
                                     21<br>
                                     2023</h6>
                             </div>
                             <div class="vl"></div>
 
-                            <h6>19.00</h6>
+                            <h6 class="tarih">19.00</h6>
                         </div>
 
-                        <p class="adres">Yeni Emek Mah. Aliya İzzet Begoviç Cad. No:140 <br>
-                            <b>MODA DÜĞÜN SALONU</b><br>
+                        <p class="adres"><b>MODA DÜĞÜN SALONU</b><br>
+                            Yeni Emek Mah. Aliya İzzet Begoviç Cad. No:140 <br>
                             07060 Kepez/ANTALYA
                         </p>
-                        <a href="https://www.google.com/maps/dir//moda+d%C3%BC%C4%9F%C3%BCn+salonu+antalya/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14c38f7b9de73923:0x7f8e37647b7c913f?sa=X&ved=2ahUKEwji_6a4xo-BAxX89bsIHXzQDtwQ9Rd6BAhFEAA&ved=2ahUKEwji_6a4xo-BAxX89bsIHXzQDtwQ9Rd6BAhPEAQ" class="text-decoration-underline text-black border-black w-25 text-center" target="_blank"><b>Konum için tıklayın.</b></a>
+                        <a href="https://www.google.com/maps/dir//moda+d%C3%BC%C4%9F%C3%BCn+salonu+antalya/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14c38f7b9de73923:0x7f8e37647b7c913f?sa=X&ved=2ahUKEwji_6a4xo-BAxX89bsIHXzQDtwQ9Rd6BAhFEAA&ved=2ahUKEwji_6a4xo-BAxX89bsIHXzQDtwQ9Rd6BAhPEAQ" class="konum text-decoration-underline text-black border-black w-25 text-center" target="_blank"><b>Konum için tıklayın.</b></a>
 
                     </div>
                     <hr>
 
                     <div class="flex-column  justify-content-around flex-grow-1 mt-3 mb-3">
-                        <h4 class="basliklar">DÜĞÜN</h4>
+                        <h4 class="basliklar mb-4">DÜĞÜN</h4>
 
                         <div class="tarih d-flex flex-row align-items-center justify-content-center ">
-                            <h6>PAZAR</h6>
+                            <h6 class="tarih">PAZAR</h6>
                             <div class="vl"></div>
 
                             <div class="d-flex flex-column ">
-                                <h6>Ekim<br>
+                                <h6 class="tarih">Ekim<br>
                                     22<br>
                                     2023</h6>
                             </div>
+                            <div class="vl"></div>
+                            
+                            <h6 class="tarih">16.00</h6>
                         </div>
 
                         <div class="d-flex flex-column  justify-content-center">
                             <div class="m-2">
 
-                                <h6 class="nikah">GELİN ALMA: 14.30</h6>
+                                <h6 class="nikah">GELİN ALMA: 15.00</h6>
 
-                                <p class="adres">Kız Evi: Siteler Mah. 1308. Sk. No:2B/9<br>
-                                    <b>AHMET KARTAL KONUTLARI</b><br>
+                                <p class="adres"><b>Kız Evi: AHMET KARTAL KONUTLARI</b><br>
+                                    Siteler Mah. 1307. Sk. No:13/A B1 Blok Daire:9<br>
                                     07070 Konyaaltı/ANTALYA
                                 </p>
-                                <a href="https://maps.app.goo.gl/DDPy52BJ9hFTCYBN6?g_st=iw" class="text-decoration-underline text-black border-black w-25 text-center" target="_blank"><b>Konum için tıklayın.</b></a>
-
+                                <a href="https://maps.app.goo.gl/pygAkVcmj2JwpkRE8?g_st=iw" class="konum text-decoration-underline text-black border-black w-25 text-center" target="_blank"><b>Konum için tıklayın.</b></a>
+                              
                             </div>
                             <hr class="container w-75">
 
@@ -191,11 +196,11 @@
 
                                 <h6 class="nikah">DÜĞÜN: 16.00</h6>
 
-                                <p class="adres">Düzlerçamı Mah. Termessos Bulv. No:122<br>
-                                    <b>AVLUPARK KIR BAHÇESİ</b><br>
+                                <p class="adres"><b>AVLUPARK KIR BAHÇESİ</b><br>
+                                    Düzlerçamı Mah. Termessos Bulv. No:122<br>
                                     07395 Düzlerçamı/ANTALYA
                                 </p>
-                                <a href="https://www.google.com/maps/dir/36.9025801,30.6314943/avlu+park/@36.9377945,30.5411691,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x14c38b936bd7c333:0x5dc371c33bbd5095!2m2!1d30.5777301!2d36.977066?entry=ttu" class="text-decoration-underline text-black border-black w-25 text-center" target="_blank"><b>Konum için tıklayın.</b></a>
+                                <a href="https://www.google.com/maps/dir/36.9025801,30.6314943/avlu+park/@36.9377945,30.5411691,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x14c38b936bd7c333:0x5dc371c33bbd5095!2m2!1d30.5777301!2d36.977066?entry=ttu" class="konum text-decoration-underline text-black border-black w-25 text-center" target="_blank"><b>Konum için tıklayın.</b></a>
 
                             </div>
                         </div>

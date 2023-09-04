@@ -129,9 +129,9 @@ a{
 
 .vl {
     border-left: 1px solid black;
-    height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 .vl2 {
@@ -198,15 +198,14 @@ a{
   .tarih {
     font-family: 'DM Serif Display', serif;
     font-family: 'Slabo 27px', serif;
+    font-size: 1.5rem;
   }
 
   .kiminle {
     font-family: 'Quicksand', sans-serif;
   }
 
-  .tarih {
-    font-size: 1.5rem;
-  }
+ 
 
   .adres {
     font-size: 1rem;
@@ -314,4 +313,10 @@ text-align: center;
   .guestInput {
     width: 25%;
   }
+}
+
+.konum {
+  font-family: 'Roboto Slab', serif;
+
+
 }
