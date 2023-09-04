@@ -15,6 +15,10 @@ function makeInvitation() {
 
     document.getElementById("who").innerText = "Sevgili \n" + guestName;
 
+    if (document.getElementById("guestName").value == "") {
+      document.getElementById("who").innerText = ""
+    }
+
     
     showSlides(slideIndex += 1);
 

@@ -142,8 +142,9 @@ a{
 }
 
   #who {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+    margin-top: 7vh;
+    font-family: 'Sahitya', serif;
+    font-size: 1.5rem;
   }
 
   #with {
@@ -155,7 +156,7 @@ a{
 
   .isimler {
     font-family: 'Dancing Script', cursive;
-    font-size: 9vh;
+    font-size: 7vh;
 
     margin: 0;
     padding: 0;
@@ -171,7 +172,7 @@ a{
 
   .sizeOzel {
     font-family: 'Questrial', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .guestInput {
@@ -289,3 +290,28 @@ text-align: center;
 /* .parts {
   background-color:#E7ECE5;
 } */
+
+
+.names {
+  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+@media screen and (max-width: 900px) {
+  .decorator-1 img, .decorator-2 img {
+    width: 70%;
+  }
+  .guestInput {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .decorator-1 img, .decorator-2 img {
+    width: 30%;
+  }
+  .guestInput {
+    width: 25%;
+  }
+}
