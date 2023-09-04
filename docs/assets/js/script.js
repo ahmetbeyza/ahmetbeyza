@@ -17,6 +17,8 @@ function makeInvitation() {
 
     if (document.getElementById("guestName").value == "") {
       document.getElementById("who").innerText = ""
+      document.getElementById("with").innerText = "";
+
     }
 
     
@@ -73,6 +75,7 @@ function typeText() {
 }
 
 typeText();
+
 
 
 backButton.addEventListener('click', function() {
