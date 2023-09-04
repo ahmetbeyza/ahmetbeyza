@@ -1,6 +1,5 @@
 function makeInvitation() {
 
-  if (document.getElementById("guestName").value !== "") {
     const guestName = document.getElementById("guestName").value.toUpperCase();
     
     document.getElementById("closeRow").style.marginTop = "0vh";
@@ -16,20 +15,14 @@ function makeInvitation() {
 
     document.getElementById("who").innerText = "Sevgili \n" + guestName;
 
-    document.getElementById("uyari").style.display = "none";
-
-
-    showSlides(slideIndex += 1);
-
-  }
-
-   
-
-    else {
-      document.getElementById("uyari").style.display = "initial";
+    if (document.getElementById("guestName").value == "") {
       document.getElementById("who").innerText = ""
       document.getElementById("with").innerText = "";
     }
+
+    
+    showSlides(slideIndex += 1);
+
 }
 
 /*slide*/

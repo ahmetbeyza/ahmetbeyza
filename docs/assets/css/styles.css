@@ -317,6 +317,10 @@ text-align: center;
 
 .konum {
   font-family: 'Roboto Slab', serif;
+}
 
+#uyari {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
 
 }
