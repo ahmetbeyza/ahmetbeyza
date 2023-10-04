@@ -84,29 +84,27 @@ backButton.addEventListener('click', function() {
 });
 
 
-// Counter Code
-// -------------------------------------------------
-var countDownDate = new Date("Oct 28, 2023 19:00:00").getTime();
+var countDownDate2 = new Date("Oct 22, 2023 16:00:00").getTime();
 
-var date = new Date();
+var date2 = new Date();
 
-var myfunc = setInterval(function() {
+var myfunc2 = setInterval(function() {
 
-var now = new Date().getTime();
-var timeleft = countDownDate - now;
+var now2 = new Date().getTime();
+var timeleft2 = countDownDate2 - now2;
 
-var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+var days2 = Math.floor(timeleft2 / (1000 * 60 * 60 * 24));
+var hours2 = Math.floor((timeleft2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes2 = Math.floor((timeleft2 % (1000 * 60 * 60)) / (1000 * 60));
+var seconds2 = Math.floor((timeleft2 % (1000 * 60)) / 1000);
 
-document.getElementById("day").innerHTML = days
-document.getElementById("hour").innerHTML = hours 
-document.getElementById("min").innerHTML = minutes
-document.getElementById("sec").innerHTML = seconds
+document.getElementById("day2").innerHTML = days2
+document.getElementById("hour2").innerHTML = hours2 
+document.getElementById("min2").innerHTML = minutes2
+document.getElementById("sec2").innerHTML = seconds2
 
-if (timeleft < 0) {
-    clearInterval(myfunc);
+if (timeleft2 < 0) {
+    clearInterval(myfunc2);
     document.getElementById("day").innerHTML = "Are"
     document.getElementById("hour").innerHTML = "You" 
     document.getElementById("min").innerHTML = "Ready"
